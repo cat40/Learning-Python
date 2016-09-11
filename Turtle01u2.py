@@ -8,16 +8,22 @@ import math
 
 import turtle
 turtle.RawPen(turtle.Screen())
+
 p = (math.pi*3/4) 
+i = 400
+
 turtle.radians()
 turtle.pu()
-turtle.setpos(-150, (300*5/24) + 20)
+turtle.setpos(-i/2, (i*5/24) + 20)
 turtle.pd()
 turtle.color("red", "blue")
 
+turtle.fill(True)
 for b in range(0,8,1):
-    turtle.fd(300)
+    turtle.fd(i)
     turtle.right(p)
+
+turtle.fill(False)
 
 turtle.pu()
 turtle.setpos(-70,20)
